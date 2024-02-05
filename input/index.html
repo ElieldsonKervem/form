@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="css.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+     
+     <header>
+        <h1>
+            Crie e compartilhe suas listas de tarefas
+        </h1>
+        <p>
+            cadastre suas tarefas no nosso site,
+            Crie e compartilhe suas listas de tarefas
+        </p>
+     </header>
+        
+      <form action="">
+           <fieldset>
+                <legend>
+                   Informações do evento
+                </legend>
+                <div class="input-wrapper space flex-colum">
+                  <div class="labelContainer">
+                    <label for="event-tittle">
+                        Título do evento
+                    </label>
+                    <span class="sub-titles">(Mínimo 8 caracteres)</span>
+                 </div>
+                    <input type="text" id="event-tittle" required placeholder="Digite aqui o titulo do evento">
+                </div>
+
+                <div class="input-wrapper space flex-colum">
+                    <div class="labelContainer">
+                      <label for="event-link">
+                          Link do evento
+                      </label>
+                      <span class="sub-titles">(Comece com https://)</span>
+                   </div>
+                      <input type="email" id="event-link" required placeholder="Digite aqui o titulo do Link">
+                </div>
+
+
+                <div class="input-wrapper space flex-colum">
+                    <div class="labelContainer">
+                      <label for="event-whatssap">
+                          Whatsapp para contato
+                      </label>
+                      <span class="sub-titles">(Somente números)</span>
+                   </div>
+                      <input type="tel" id="event-whatssap" required placeholder="Digite aqui o Whatsapp">
+                </div>
+
+                <div class="input-wrapper space flex-colum">
+                    <div class="labelContainer">
+                      <label for="event-text">
+                          Informações extras do evento
+                      </label>
+                    
+                   </div>
+                      <textarea name="event-text" id="event-text" cols="20" rows="10" ></textarea>
+                </div>
+
+                <div class="input-wrapper space flex-colum">
+                    <div class="labelContainer">
+                        <label for="event-categoria">
+                            Categoria
+                         </label>
+                    </div>
+                    <select name="event-category" id="event-select">
+                        <option value="live">
+                            Ao vivo
+                        </option>
+                        <option value="podcast">
+                            podcast
+                        </option>
+                        <option value="video">
+                            Vídeo
+                        </option>
+                    </select>
+                  
+                </div>
+
+
+           </fieldset>
+
+           <fieldset>
+                <legend>
+                    Privacidade
+                </legend>
+                
+                <div class="input-wrapper space flex-colum">
+                    <div class="labelContainer">
+                      <label for="event-admin-email">
+                          Email do administrador
+                      </label>
+                      <span class="sub-titles">(Use email valido)</span>
+                   </div>
+                      <input type="email" id="event-admin-email" required placeholder="Digite o email do administrador do evento">
+                  </div>
+
+                  <div class="input-wrapper space flex-colum">
+                    <div class="labelContainer">
+                      <label for="event-admin-password">
+                          Digite a senha
+                      </label>
+                      <span class="sub-titles">(Minimo 8 caracteres)</span>
+                   </div>
+                      <input type="password" id="event-admin-password" required placeholder="Digite uma senha valida">
+                  </div>
+
+
+                  <div class="row-colum">
+                     <div class="input-wrapper space flex-colum">
+                        <div class="labelContainer">
+                          <label for="event-data">
+                              Data
+                          </label>
+                         </div>
+                          <input type="date" id="event-data" required placeholder="dd/mm/yy">
+                      </div>
+                      <div class="input-wrapper space flex-colum">
+                        <div class="labelContainer">
+                          <label for="event-time">
+                              Das
+                          </label>
+                         </div>
+                          <input type="time" id="event-data" required placeholder="--:--">
+                      </div>
+                      <div class="input-wrapper space flex-colum">
+                        <div class="labelContainer">
+                          <label for="event-end-time">
+                              Até
+                          </label>
+                         </div>
+                          <input type="time" id="event-data" required placeholder="--:--">
+                      </div>
+                
+                      
+    
+                  </div> 
+                 
+                  </div>
+
+               <div class="footerField">
+                  <button id="btn-event">Salvar evento</button>
+               </div>
+            </div>
+
+
+       </fieldset>
+
+      </form>
+    <script src="./index.js"></script>
+</body>
+</html>

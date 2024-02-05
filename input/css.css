@@ -1,0 +1,138 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+header{
+    width: 1200px;
+    height: 360px;
+    margin: 0px auto;
+    padding: 100px 160px;
+}
+
+header h1,p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: white;
+}
+
+h1{
+    width: 400px;
+}
+
+p{
+    font-size: 14px;
+    line-height: 21px;
+    color: rgb(47, 178, 222);
+    width: 300px;
+
+}
+
+
+body::before{
+       content: '';
+       width: 100vw;
+       height: 360px;
+
+       position: absolute;
+       top: 0;
+       left: 0;
+       z-index:-2;
+
+       background: black;
+}
+
+form{
+    width: 900px;
+    margin: -280px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 4px;
+}
+ 
+.space{
+    margin: 20px 0;
+}
+.flex-colum{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+fieldset{
+    border: none;
+    margin-bottom: 20px;
+
+}
+
+fieldset legend{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    border-bottom: 0.5px solid #E5E5E5;
+    width: 92%;
+}
+
+span{
+    font-size: 14px;
+    line-height: 21px;
+    color: #828282;
+}
+
+input{
+    width: 90%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    outline: none;
+    color: #828282;
+}
+
+
+textarea{
+    width: 90%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    outline: none;
+    color: #828282;
+}
+
+select{
+    width: 93%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    outline: none;
+    color: #828282;
+}
+
+.row-colum{
+    display: flex;
+    gap: 20px;
+}
+
+.footerField{
+    background: rgba(116, 116, 116, 0.041);
+    padding: 40px;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    background: #3be891;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+}
